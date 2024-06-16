@@ -1,6 +1,7 @@
 class Solution(object):
     def twoSum(self, numbers, target):
-        left,right = 0, len(numbers) - 1
+        left =  0
+        right = len(numbers) - 1
         while numbers[left] + numbers[right] != target:
             total = numbers[left] + numbers[right]
             if total < target:

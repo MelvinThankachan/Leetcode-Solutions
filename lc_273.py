@@ -52,7 +52,6 @@ class Solution:
                         + self.helper(n % (1000**i))
                     )
         return ""
-
     def numberToWords(self, num: int) -> str:
         if num == 0:
             return "Zero"

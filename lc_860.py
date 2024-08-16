@@ -1,24 +1,30 @@
 from typing import List
 
+
 class Solution:
     def lemonadeChange(self, bills: List[int]) -> bool:
-        five = ten = 0
-        for i in bills:
-            if i == 5:
-                five += 1
-            elif i == 10:
-                five, ten = five - 1, ten + 1
-            elif ten > 0:
-                five, ten = five - 1, ten - 1
+        fives = 0
+        tens = 0
+        for bill in bills:
+            if bill == 5:
+                fives += 1
+            elif bill == 10:
+                fives -= 1
+                tens += 1
+            elif tens > 0:
+                tens -= 1
+                fives -= 1
             else:
-                five -= 3
-            if five < 0:
+                fives -= 3
+
+            if fives < 0:
                 return False
+
         return True
 
 
 result = Solution()
-bills = [5,5,10,10,20]
+bills = [5, 5, 10, 10, 20]
 output = result.lemonadeChange(bills)
 print("output", output)
 expected = False

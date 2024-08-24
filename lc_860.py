@@ -29,4 +29,4 @@ output = result.lemonadeChange(bills)
 print("output", output)
 expected = False
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

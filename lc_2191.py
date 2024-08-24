@@ -23,4 +23,4 @@ output = result.sortJumbled(mapping, nums)
 print(output)
 expected = [99,7686,2212638,97012948,84234023]
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

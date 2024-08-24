@@ -12,4 +12,4 @@ output = result.nearestPalindromic(n)
 print("output", output)
 expected = "0"
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

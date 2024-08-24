@@ -22,4 +22,4 @@ print(output)
 expected = [4, 5, 6, 7, 1, 2, 3]
 
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

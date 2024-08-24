@@ -19,4 +19,4 @@ output = result.isUgly(n)
 print("output", output)
 expected = True
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

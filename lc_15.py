@@ -37,4 +37,4 @@ print(output)
 expected = [[-1,-1,2],[-1,0,1]]
 
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

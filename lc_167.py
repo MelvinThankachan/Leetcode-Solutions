@@ -21,4 +21,4 @@ print(output)
 expected = [1, 2]
 
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

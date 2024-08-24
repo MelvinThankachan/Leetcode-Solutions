@@ -11,4 +11,4 @@ output = result.frequencySort(nums)
 print(output)
 expected = [3,1,1,2,2,2]
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

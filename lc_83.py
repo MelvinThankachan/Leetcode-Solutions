@@ -33,6 +33,6 @@ output = result.deleteDuplicates(head)
 print("output", output)
 expected = [1, 2]
 if is_list_equal(output, expected):
-    print("jayichu mone!")
+    print("Test passed successfully!")
 else:
     print_list(output)

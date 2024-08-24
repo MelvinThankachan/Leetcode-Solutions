@@ -22,4 +22,4 @@ output = result.productExceptSelf(nums)
 print("output", output)
 expected = [0,0,9,0,0]
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

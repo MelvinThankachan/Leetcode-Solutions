@@ -23,4 +23,4 @@ output = result.maxDistance(arrays)
 print("output", output)
 expected = 3
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

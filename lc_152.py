@@ -20,4 +20,4 @@ output = result.maxProduct(nums)
 print(output)
 expected = 0
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

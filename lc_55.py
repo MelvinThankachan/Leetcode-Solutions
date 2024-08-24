@@ -18,4 +18,4 @@ output = result.canJump(nums)
 print(output)
 expected = True
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

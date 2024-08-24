@@ -25,4 +25,4 @@ output = result.nthUglyNumber(n)
 print("output", output)
 expected = 12
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

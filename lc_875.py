@@ -25,4 +25,4 @@ output = result.minEatingSpeed(piles, h)
 print(output)
 expected = 4
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

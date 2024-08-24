@@ -24,4 +24,4 @@ output = result.lemonadeChange(boards)
 print("output", output)
 expected = False
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

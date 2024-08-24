@@ -21,4 +21,4 @@ output = result.averageWaitingTime(customers)
 print(output)
 expected = 3.25000
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

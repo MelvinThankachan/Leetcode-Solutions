@@ -44,4 +44,4 @@ output = result.sortArray(nums)
 print(output)
 expected = [0, 0, 1, 1, 2, 5]
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

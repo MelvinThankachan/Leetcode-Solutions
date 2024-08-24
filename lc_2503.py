@@ -40,4 +40,4 @@ output = result.kthDistinct(arr, k)
 print("output", output)
 expected = "a"
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

@@ -40,4 +40,4 @@ print(output)
 expected = 17
 
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

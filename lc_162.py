@@ -15,4 +15,4 @@ output = result.findPeakElement(nums)
 print(output)
 expected = 2
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

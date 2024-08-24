@@ -33,4 +33,4 @@ output = result.maxPoints(points)
 print("output", output)
 expected = 13
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

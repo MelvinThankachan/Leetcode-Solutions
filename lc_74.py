@@ -41,4 +41,4 @@ output = result.searchMatrix(matrix, target)
 print(output)
 expected = True
 if output == expected:
-    print("jayichu mone!")
+    print("Test passed successfully!")

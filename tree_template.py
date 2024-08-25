@@ -1,7 +1,3 @@
-from collections import deque
-
-
-# Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,57 +5,80 @@ class TreeNode:
         self.right = right
 
 
-class Tree:
-    def __init__(self):
-        self.root = None
+def create_tree_from_array(arr):
+    """Create a binary tree from a given array using level-order traversal."""
+    if not arr:
+        return None
 
-    def update(self, array):
-        if not array:
-            self.root = None
-            return
+    # Create the root node
+    root = TreeNode(arr[0])
+    queue = [root]
+    index = 1
 
-        # Create the root of the tree
-        self.root = TreeNode(array[0])
-        queue = deque([self.root])
+    # Level-order traversal to create the tree
+    while index < len(arr):
+        node = queue.pop(0)
 
-        index = 1
+        # Assign left child
+        if index < len(arr) and arr[index] is not None:
+            node.left = TreeNode(arr[index])
+            queue.append(node.left)
+        index += 1
 
-        while index < len(array):
-            current = queue.popleft()
+        # Assign right child
+        if index < len(arr) and arr[index] is not None:
+            node.right = TreeNode(arr[index])
+            queue.append(node.right)
+        index += 1
 
-            # Add left child
-            if index < len(array) and array[index] is not None:
-                current.left = TreeNode(array[index])
-                queue.append(current.left)
-            index += 1
+    return root
 
-            # Add right child
-            if index < len(array) and array[index] is not None:
-                current.right = TreeNode(array[index])
-                queue.append(current.right)
-            index += 1
 
-    def count(self):
-        def counting(root):
-            if root is None:
-                return 0
-            return 1 + counting(root.left) + counting(root.right)
+def print_tree(root):
+    """Print the binary tree in level-order traversal."""
+    if not root:
+        print([])
+        return
+    result = []
+    queue = [root]
+    while queue:
+        level = []
+        level_length = len(queue)
+        for _ in range(level_length):
+            node = queue.pop(0)
+            if node:
+                level.append(node.val)
+                queue.append(node.left)
+                queue.append(node.right)
+            else:
+                level.append(None)
+        # Remove trailing None values for a cleaner output
+        if any(v is not None for v in level):
+            result.append(level)
+    print(result)
 
-        return counting(self.root)
 
-    def print_tree(self):
-        queue = deque([self.root])
-        tree = []
-        count = self.count()
+def serialize_tree(root):
+    """Serialize the tree into a list of values in level-order traversal."""
+    if not root:
+        return []
+    result = []
+    queue = [root]
+    while queue:
+        node = queue.pop(0)
+        if node:
+            result.append(node.val)
+            queue.append(node.left)
+            queue.append(node.right)
+        else:
+            result.append(None)
+    # Remove trailing None values for a cleaner comparison
+    while result and result[-1] is None:
+        result.pop()
+    return result
 
-        while count > 0:
-            current = queue.popleft()
-            value = None
-            if current is not None:
-                value = current.val
-                queue.append(current.left)
-                queue.append(current.right)
-                count -= 1
-            tree.append(value)
 
-        print(tree)
+def is_tree_equal(root, arr):
+    """Check if the binary tree matches the given list of values in level-order traversal."""
+    tree_values = serialize_tree(root)
+    return tree_values == arr

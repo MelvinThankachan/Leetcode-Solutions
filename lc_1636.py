@@ -12,3 +12,5 @@ print(output)
 expected = [3,1,1,2,2,2]
 if output == expected:
     print("Test passed successfully!")
+else:
+    print("Test failed!")

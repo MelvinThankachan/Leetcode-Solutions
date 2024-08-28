@@ -35,4 +35,4 @@ expected = [1, 2]
 if is_list_equal(output, expected):
     print("Test passed successfully!")
 else:
-    print_list(output)
+    print("Test failed!")

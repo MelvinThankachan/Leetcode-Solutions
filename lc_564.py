@@ -13,3 +13,6 @@ print("output", output)
 expected = "0"
 if output == expected:
     print("Test passed successfully!")
+else:
+    print("Test failed!")
+

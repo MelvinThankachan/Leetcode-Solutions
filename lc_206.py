@@ -56,3 +56,6 @@ print("output", output)
 expected = [5, 4, 3, 2, 1]
 if is_list_equal(output, expected):
     print("Test passed successfully!")
+else:
+    print("Test failed!")
+

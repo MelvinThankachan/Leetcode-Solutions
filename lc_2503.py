@@ -41,3 +41,6 @@ print("output", output)
 expected = "a"
 if output == expected:
     print("Test passed successfully!")
+else:
+    print("Test failed!")
+

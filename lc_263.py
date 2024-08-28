@@ -20,3 +20,5 @@ print("output", output)
 expected = True
 if output == expected:
     print("Test passed successfully!")
+else:
+    print("Test failed!")

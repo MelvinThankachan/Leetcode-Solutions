@@ -24,3 +24,5 @@ print(output)
 expected = [99,7686,2212638,97012948,84234023]
 if output == expected:
     print("Test passed successfully!")
+else:
+    print("Test failed!")

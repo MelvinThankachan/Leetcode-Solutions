@@ -39,3 +39,6 @@ print(output)
 expected = [3.00000, 14.50000, 11.00000]
 if output == expected:
     print("Test passed successfully!")
+else:
+    print("Test failed!")
+

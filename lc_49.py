@@ -24,3 +24,6 @@ print(output)
 expected = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
 if are_equal_arrays(expected, output):
     print("Test passed successfully!")
+else:
+    print("Test failed!")
+

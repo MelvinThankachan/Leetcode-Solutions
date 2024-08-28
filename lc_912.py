@@ -45,3 +45,6 @@ print(output)
 expected = [0, 0, 1, 1, 2, 5]
 if output == expected:
     print("Test passed successfully!")
+else:
+    print("Test failed!")
+

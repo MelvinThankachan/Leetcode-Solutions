@@ -16,3 +16,5 @@ print(output)
 expected = 2
 if output == expected:
     print("Test passed successfully!")
+else:
+    print("Test failed!")

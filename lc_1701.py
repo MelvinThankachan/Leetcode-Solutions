@@ -22,3 +22,6 @@ print(output)
 expected = 3.25000
 if output == expected:
     print("Test passed successfully!")
+else:
+    print("Test failed!")
+

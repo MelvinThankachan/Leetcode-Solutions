@@ -9,7 +9,7 @@ class Solution:
 result = Solution()
 s = "a0b1c2"
 output = result.xorOperation(n, start)
-print("output", output)
+print(f"Output: {output}")
 expected = "0a1b2c"
 if output == expected:
     print("Test passed successfully!")

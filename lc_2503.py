@@ -37,7 +37,7 @@ result = Solution()
 arr = ["d", "b", "c", "b", "c", "a"]
 k = 2
 output = result.kthDistinct(arr, k)
-print("output", output)
+print(f"Output: {output}")
 expected = "a"
 if output == expected:
     print("Test passed successfully!")

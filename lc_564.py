@@ -9,7 +9,7 @@ class Solution:
 result = Solution()
 n = "123"
 output = result.nearestPalindromic(n)
-print("output", output)
+print(f"Output: {output}")
 expected = "0"
 if output == expected:
     print("Test passed successfully!")

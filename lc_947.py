@@ -25,7 +25,7 @@ class Solution:
 result = Solution()
 stones = [[3, 2], [3, 1], [4, 4], [1, 1], [0, 2], [4, 0]]
 output = result.removeStones(stones)
-print("output", output)
+print(f"Output: {output}")
 expected = 4
 if output == expected:
     print("Test passed successfully!")

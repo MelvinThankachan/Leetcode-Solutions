@@ -18,7 +18,7 @@ n = 4
 left = 1
 right = 5
 output = result.rangeSum(nums, n, left, right)
-print("output", output)
+print(f"Output: {output}")
 expected = 13
 if output == expected:
     print("Test passed successfully!")

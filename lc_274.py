@@ -16,7 +16,7 @@ class Solution(object):
 result = Solution()
 citations = [3,0,6,1,5]
 output = result.hIndex(citations)
-print("output", output)
+print(f"Output: {output}")
 expected = 3
 if output == expected:
     print("Test passed successfully!")

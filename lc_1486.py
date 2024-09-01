@@ -14,7 +14,7 @@ result = Solution()
 n = 5
 start = 0
 output = result.xorOperation(n, start)
-print("output", output)
+print(f"Output: {output}")
 expected = 8
 if output == expected:
     print("Test passed successfully!")

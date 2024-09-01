@@ -26,7 +26,7 @@ class Solution:
 result = Solution()
 bills = [5, 5, 10, 10, 20]
 output = result.lemonadeChange(bills)
-print("output", output)
+print(f"Output: {output}")
 expected = False
 if output == expected:
     print("Test passed successfully!")

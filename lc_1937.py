@@ -30,7 +30,7 @@ class Solution:
 result = Solution()
 points = [[5, 2, 1, 2], [2, 1, 5, 2], [5, 5, 5, 0]]
 output = result.maxPoints(points)
-print("output", output)
+print(f"Output: {output}")
 expected = 13
 if output == expected:
     print("Test passed successfully!")

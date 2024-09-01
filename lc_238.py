@@ -19,7 +19,7 @@ class Solution:
 result = Solution()
 nums = [-1,1,0,-3,3]
 output = result.productExceptSelf(nums)
-print("output", output)
+print(f"Output: {output}")
 expected = [0,0,9,0,0]
 if output == expected:
     print("Test passed successfully!")

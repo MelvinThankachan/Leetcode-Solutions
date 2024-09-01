@@ -20,7 +20,7 @@ class Solution:
 result = Solution()
 arrays = [[1, 5], [3, 4]]
 output = result.maxDistance(arrays)
-print("output", output)
+print(f"Output: {output}")
 expected = 3
 if output == expected:
     print("Test passed successfully!")

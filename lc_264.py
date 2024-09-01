@@ -22,7 +22,7 @@ class Solution:
 result = Solution()
 n = 10
 output = result.nthUglyNumber(n)
-print("output", output)
+print(f"Output: {output}")
 expected = 12
 if output == expected:
     print("Test passed successfully!")

@@ -13,7 +13,7 @@ result = Solution()
 candies = [2, 3, 5, 1, 3]
 extraCandies = 3
 output = result.kidsWithCandies(candies, extraCandies)
-print("output", output)
+print(f"Output: {output}")
 expected = [True, True, True, False, True]
 if output == expected:
     print("Test passed successfully!")

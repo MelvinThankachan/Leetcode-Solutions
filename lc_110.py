@@ -63,7 +63,7 @@ result = Solution()
 array = [3, 9, 20, None, None, 15, 7]
 root = create_tree_from_array(array)
 output = result.isBalanced(root)
-print("output", output)
+print(f"Output: {output}")
 expected = True
 if output == expected:
     print("Test passed successfully!")

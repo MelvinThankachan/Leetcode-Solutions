@@ -16,7 +16,7 @@ class Solution:
 result = Solution()
 n = 347826
 output = result.isUgly(n)
-print("output", output)
+print(f"Output: {output}")
 expected = True
 if output == expected:
     print("Test passed successfully!")

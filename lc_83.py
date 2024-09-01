@@ -30,7 +30,7 @@ result = Solution()
 list = [1, 1, 2]
 head = create_list_from_array(list)
 output = result.deleteDuplicates(head)
-print("output", output)
+print(f"Output: {output}")
 expected = [1, 2]
 if is_list_equal(output, expected):
     print("Test passed successfully!")

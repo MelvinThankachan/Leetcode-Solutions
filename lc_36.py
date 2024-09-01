@@ -21,7 +21,7 @@ boards = [
     [".", ".", ".", ".", "8", ".", ".", "7", "9"],
 ]
 output = result.lemonadeChange(boards)
-print("output", output)
+print(f"Output: {output}")
 expected = False
 if output == expected:
     print("Test passed successfully!")

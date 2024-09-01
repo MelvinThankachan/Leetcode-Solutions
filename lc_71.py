@@ -18,7 +18,7 @@ class Solution:
 result = Solution()
 path = "/.../a/../b/c/../d/./"
 output = result.simplifyPath(path)
-print("output", output)
+print(f"Output: {output}")
 expected = "/.../b/d"
 if output == expected:
     print("Test passed successfully!")

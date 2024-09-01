@@ -35,7 +35,7 @@ class Solution:
 result = Solution()
 piles = [3, 2, 10, 4]
 output = result.stoneGame(piles)
-print("output", output)
+print(f"Output: {output}")
 expected = True
 if output == expected:
     print("Test passed successfully!")

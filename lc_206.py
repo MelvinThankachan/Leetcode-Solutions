@@ -52,7 +52,7 @@ result = Solution()
 arr = [1, 2, 3, 4, 5]
 head = create_list_from_array(arr)
 output = result.reverseList(head)
-print("output", output)
+print(f"Output: {output}")
 expected = [5, 4, 3, 2, 1]
 if is_list_equal(output, expected):
     print("Test passed successfully!")

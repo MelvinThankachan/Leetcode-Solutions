@@ -19,7 +19,9 @@ class Solution(object):
 result = Solution()
 height = [4,2,0,3,2,5]
 output = result.trap(height)
-print(output)
+print(f"Output: {output}")
 expected_output = 9
 if output == expected_output:
-    print("Jayichu mwone!")
+    print("Test passed successfully!")
+else:
+    print("Test failed!")

@@ -13,7 +13,9 @@ result = Solution()
 nums = [2, 7, 11, 15]
 target = 9
 output = result.twoSum(nums, target)
-print(output)
+print(f"Output: {output}")
 expected_output = [0, 1]
 if output == expected_output:
-    print("Jayichu mwone!")
+    print("Test passed successfully!")
+else:
+    print("Test failed!")

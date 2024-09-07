@@ -35,7 +35,7 @@ tree.update(root)
 
 result = Solution()
 output = result.averageOfLevels(tree.root)
-print(output)
+print(f"Output: {output}")
 expected = [3.00000, 14.50000, 11.00000]
 if output == expected:
     print("Test passed successfully!")

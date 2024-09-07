@@ -14,7 +14,7 @@ class Solution:
 result = Solution()
 details = ["7868190130M7522", "5303914400F9211", "9273338290F4010"]
 output = result.countSeniors(details)
-print(output)
+print(f"Output: {output}")
 expected = 2
 if output == expected:
     print("Test passed successfully!")

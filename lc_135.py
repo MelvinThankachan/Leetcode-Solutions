@@ -33,7 +33,9 @@ class Solution(object):
 result = Solution()
 ratings = [1, 3, 4, 5, 2]
 output = result.candy(ratings)
-print(output)
+print(f"Output: {output}")
 expected_output = 11
 if output == expected_output:
-    print("Jayichu mwone!")
+    print("Test passed successfully!")
+else:
+    print("Test failed!")

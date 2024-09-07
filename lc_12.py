@@ -30,7 +30,9 @@ class Solution(object):
 result = Solution()
 num = 3749
 output = result.intToRoman(num)
-print(output)
+print(f"Output: {output}")
 expected_output = "MMMDCCXLIX"
 if output == expected_output:
-    print("Jayichu mwone!")
+    print("Test passed successfully!")
+else:
+    print("Test failed!")

@@ -31,11 +31,8 @@ class Solution(object):
 result = Solution()
 nums = [-1,0,1,2,-1,-4]
 output = result.threeSum(nums)
-
-print(output)
-
+print(f"Output: {output}")
 expected = [[-1,-1,2],[-1,0,1]]
-
 if output == expected:
     print("Test passed successfully!")
 else:

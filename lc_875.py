@@ -22,7 +22,7 @@ result = Solution()
 piles = [3, 6, 7, 11]
 h = 8
 output = result.minEatingSpeed(piles, h)
-print(output)
+print(f"Output: {output}")
 expected = 4
 if output == expected:
     print("Test passed successfully!")

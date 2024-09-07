@@ -15,7 +15,7 @@ class Solution(object):
 result = Solution()
 nums = [2, 5, 0, 0]
 output = result.canJump(nums)
-print(output)
+print(f"Output: {output}")
 expected = True
 if output == expected:
     print("Test passed successfully!")

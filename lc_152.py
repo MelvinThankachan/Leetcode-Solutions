@@ -17,7 +17,7 @@ class Solution(object):
 result = Solution()
 nums = [-2,0,-1]
 output = result.maxProduct(nums)
-print(output)
+print(f"Output: {output}")
 expected = 0
 if output == expected:
     print("Test passed successfully!")

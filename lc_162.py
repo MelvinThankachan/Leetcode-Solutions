@@ -12,7 +12,7 @@ class Solution(object):
 result = Solution()
 nums = [1,2,3,1]
 output = result.findPeakElement(nums)
-print(output)
+print(f"Output: {output}")
 expected = 2
 if output == expected:
     print("Test passed successfully!")

@@ -41,7 +41,7 @@ class Solution:
 result = Solution()
 nums = [5, 1, 1, 2, 0, 0]
 output = result.sortArray(nums)
-print(output)
+print(f"Output: {output}")
 expected = [0, 0, 1, 1, 2, 5]
 if output == expected:
     print("Test passed successfully!")

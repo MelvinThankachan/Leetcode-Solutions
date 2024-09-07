@@ -20,7 +20,7 @@ class Solution:
 result = Solution()
 strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
 output = result.groupAnagrams(strs)
-print(output)
+print(f"Output: {output}")
 expected = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
 if are_equal_arrays(expected, output):
     print("Test passed successfully!")

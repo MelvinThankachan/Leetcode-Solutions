@@ -19,7 +19,9 @@ result = Solution()
 gas = [1,2,3,4,5]
 cost = [3,4,5,1,2]
 output = result.canCompleteCircuit(gas, cost)
-print(output)
+print(f"Output: {output}")
 expected_output = 3
 if output == expected_output:
-    print("Jayichu mwone!")
+    print("Test passed successfully!")
+else:
+    print("Test failed!")

@@ -15,11 +15,8 @@ result = Solution()
 numbers = [2,7,11,15]
 target = 9
 output = result.twoSum(numbers, target)
-
-print(output)
-
+print(f"Output: {output}")
 expected = [1, 2]
-
 if output == expected:
     print("Test passed successfully!")
 else:

@@ -16,7 +16,7 @@ result = Solution()
 nums = [1, 2, 3, 4, 5, 6, 7]
 k = 6
 output = result.rotate(nums, k)
-print(output)
+print(f"Output: {output}")
 expected = [4, 5, 6, 7, 1, 2, 3]
 if output == expected:
     print("Test passed successfully!")

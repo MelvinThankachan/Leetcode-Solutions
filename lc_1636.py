@@ -8,7 +8,7 @@ class Solution(object):
 result = Solution()
 nums = [1,1,2,2,2,3]
 output = result.frequencySort(nums)
-print(output)
+print(f"Output: {output}")
 expected = [3,1,1,2,2,2]
 if output == expected:
     print("Test passed successfully!")

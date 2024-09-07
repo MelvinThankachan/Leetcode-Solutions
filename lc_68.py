@@ -18,7 +18,9 @@ result = Solution()
 words = ["This", "is", "an", "example", "of", "text", "justification."]
 maxWidth = 16
 output = result.fullJustify(words, maxWidth)
-print(output)
+print(f"Output: {output}")
 expected_output = ["This    is    an","example  of text","justification.  "]
 if output == expected_output:
-    print("Jayichu mwone!")
+    print("Test passed successfully!")
+else:
+    print("Test failed!")

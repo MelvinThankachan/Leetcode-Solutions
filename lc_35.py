@@ -36,7 +36,9 @@ result = Solution()
 nums = [1, 3, 5, 6]
 target = 3
 output = result.searchInsert(nums, target)
-print(output)
+print(f"Output: {output}")
 expected_output = 1
 if output == expected_output:
-    print("Jayichu mwone!")
+    print("Test passed successfully!")
+else:
+    print("Test failed!")

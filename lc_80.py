@@ -19,4 +19,4 @@ class Solution(object):
 result = Solution()
 nums = [1, 1, 1, 2, 2, 2, 3, 4, 4, 4, 5]
 output = result.removeDuplicates(nums)
-print(output)
+print(f"Output: {output}")

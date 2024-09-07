@@ -25,9 +25,6 @@ class Solution:
                 right -= 1
 
         return operations
-    
-
-
 
     # Time Efficient
     def maxOperations(self, nums: List[int], k: int) -> int:
@@ -46,7 +43,7 @@ class Solution:
 
 
 result = Solution()
-nums = [3,1,3,4,3]
+nums = [3, 1, 3, 4, 3]
 k = 6
 output = result.maxOperations(nums, k)
 print(f"Output: {output}")

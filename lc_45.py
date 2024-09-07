@@ -30,7 +30,9 @@ class Solution(object):
 result = Solution()
 nums = [1, 2]
 output = result.jump(nums)
-print(output)
+print(f"Output: {output}")
 expected = 1
 if output == expected:
-    print("Jayichu mone!")
+    print("Test passed successfully!")
+else:
+    print("Test failed!")

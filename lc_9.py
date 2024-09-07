@@ -14,7 +14,7 @@ class Solution(object):
 result = Solution()
 x = -121
 output = result.isPalindrome(x)
-print(output)
+print(f"Output: {output}")
 expected = True
 if output == expected:
     print("Test passed successfully!")

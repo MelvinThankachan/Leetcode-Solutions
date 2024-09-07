@@ -20,7 +20,7 @@ result = Solution()
 mapping = [5,6,8,7,4,0,3,1,9,2]
 nums = [7686,97012948,84234023,2212638,99]
 output = result.sortJumbled(mapping, nums)
-print(output)
+print(f"Output: {output}")
 expected = [99,7686,2212638,97012948,84234023]
 if output == expected:
     print("Test passed successfully!")

@@ -10,11 +10,8 @@ class Solution(object):
 result = Solution()
 nums = [1,4,3,2]
 output = result.arrayPairSum(nums)
-
-print(output)
-
+print(f"Output: {output}")
 expected = 4
-
 if output == expected:
     print("Test passed successfully!")
 else:

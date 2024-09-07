@@ -11,7 +11,7 @@ class Solution(object):
 result = Solution()
 prices = [1, 2, 3, 4, 5]
 output = result.maxProfit(prices)
-print(output)
+print(f"Output: {output}")
 expected = 4
 if output == expected:
     print("Test passed successfully!")

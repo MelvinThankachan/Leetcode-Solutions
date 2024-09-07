@@ -35,7 +35,7 @@ class Solution:
 result = Solution()
 nums = [1, 2, 0, 1]
 output = result.longestConsecutive(nums)
-print(output)
+print(f"Output: {output}")
 expected = 3
 if output == expected:
     print("Test passed successfully!")

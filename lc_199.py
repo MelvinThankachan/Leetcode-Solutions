@@ -41,7 +41,7 @@ tree.update([1, 2, 3, None, 5, 6, None, 4])
 
 result = Solution()
 output = result.rightSideView(tree.root)
-print(output)
+print(f"Output: {output}")
 expected = [1, 3, 6, 4]
 if output == expected:
     print("Test passed successfully!")

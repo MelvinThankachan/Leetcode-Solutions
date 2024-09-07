@@ -33,7 +33,9 @@ result = Solution()
 s = "MELVINISGREAT"
 numRows = 2
 output = result.convert(s, numRows)
-print(output)
+print(f"Output: {output}")
 expected_output = "PAHNAPLSIIGYIR"
 if output == expected_output:
-    print("Jayichu mwone!")
+    print("Test passed successfully!")
+else:
+    print("Test failed!")

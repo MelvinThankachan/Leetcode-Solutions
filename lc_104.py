@@ -7,10 +7,36 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+
+from tree_template import TreeNode
+from collections import deque
+
+
 class Solution(object):
-    def maxDepth(self, root):
-        if root is None:
+    # Recursive Approach
+    def maxDepth(self, root: TreeNode):
+        if not root:
             return 0
-        left_height = self.maxDepth(root.left)
-        right_height = self.maxDepth(root.right)
-        return 1 + max(left_height, right_height)
+        left_depth = self.maxDepth(root.left)
+        right_depth = self.maxDepth(root.right)
+        return max(left_depth, right_depth) + 1
+
+    # Iterative Approach
+    def maxDepth(self, root: TreeNode) -> int:
+        if not root:
+            return 0
+
+        queue = deque([root])
+        depth = 0
+
+        while queue:
+            depth += 1
+            for _ in range(len(queue)):
+                node = queue.popleft()
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+
+        return depth

@@ -9,6 +9,7 @@ Used_in = [
     199,
     222,
     226,
+    236,
     437,
     530,
     783,
@@ -102,3 +103,11 @@ def is_tree_equal(root, arr):
     """Check if the binary tree matches the given list of values in level-order traversal."""
     tree_values = serialize_tree(root)
     return tree_values == arr
+
+
+def get_node(root, node_value):
+    """Find and return the node with the specified value."""
+    if root is None or root.val == node_value:
+        return root
+
+    return get_node(root.left, node_value) or get_node(root.right, node_value)

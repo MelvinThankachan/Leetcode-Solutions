@@ -1,6 +1,5 @@
 # 199. Binary Tree Right Side View
 
-from tree_template import Tree, deque
 
 # Definition for a binary tree root.
 # class TreeNode:
@@ -10,8 +9,13 @@ from tree_template import Tree, deque
 #         self.right = right
 
 
+from typing import Optional, List
+from tree_template import TreeNode, create_tree_from_array
+
+
 class Solution:
-    def rightSideView(self, root):
+    # Iterative Solution
+    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
         if root is None:
             return []
         result = []
@@ -34,17 +38,30 @@ class Solution:
                 next_level = deque()
         return result
 
+    # Recursive Solution
+    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
+        levels = {}
 
-tree = Tree()
-tree.update([1, 2, 3, None, 5, 6, None, 4])
+        def dfs(root, level=1):
+            if root is None:
+                return
+
+            if level not in levels:
+                levels[level] = root.val
+
+            dfs(root.right, level + 1)
+            dfs(root.left, level + 1)
+
+        dfs(root)
+        return list(levels.values())
 
 
 result = Solution()
-output = result.rightSideView(tree.root)
+root = create_tree_from_array([1, 2, 3, None, 5, None, 4])
+output = result.rightSideView(root)
 print(f"Output: {output}")
-expected = [1, 3, 6, 4]
+expected = [1, 3, 4]
 if output == expected:
     print("Test passed successfully!")
 else:
     print("Test failed!")
-

@@ -1,0 +1,3 @@
+Resources
+    - https://walkccc.me/LeetCode/
+    - https://neetcode.io/

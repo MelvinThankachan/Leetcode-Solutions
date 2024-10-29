@@ -79,7 +79,7 @@ def print_tree(root):
     print(result)
 
 
-def serialize_tree(root):
+def tree_to_level_order(root):
     """Serialize the tree into a list of values in level-order traversal."""
     if not root:
         return []
@@ -101,7 +101,7 @@ def serialize_tree(root):
 
 def is_tree_equal(root, arr):
     """Check if the binary tree matches the given list of values in level-order traversal."""
-    tree_values = serialize_tree(root)
+    tree_values = tree_to_level_order(root)
     return tree_values == arr
 
 

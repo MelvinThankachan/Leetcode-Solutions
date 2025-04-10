@@ -1,0 +1,8 @@
+# Ignore all files except those starting with "lc_"
+*
+!lc_*
+!tree_template.py
+!list_template.py
+!utils.py
+!notes.txt
+!.gitignore

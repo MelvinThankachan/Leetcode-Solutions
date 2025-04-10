@@ -1,8 +1,46 @@
-# Ignore all files except those starting with "lc_"
-*
-!lc_*
-!tree_template.py
-!list_template.py
-!utils.py
-!notes.txt
-!.gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# PyInstaller
+dist/
+build/
+
+# Pytest / Unittest
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# IDEs and editors
+.vscode/
+.idea/
+*.vscode/
+*.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Virtual environments
+env/
+venv/
+*.env
+
+# Data files
+data/
+*.csv
+*.json
+
+# Miscellaneous
+*.tmp
+*.bak
+*.swp
+*.swo

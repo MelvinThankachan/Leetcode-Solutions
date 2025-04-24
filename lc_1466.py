@@ -2,11 +2,35 @@
 
 
 from typing import List
+from collections import deque
 
 
 class Solution:
     def minReorder(self, n: int, connections: List[List[int]]) -> int:
-        pass
+        connections_graph = [[] for _ in range(n)]
+        visited_cities = [False for _ in range(n)]
+
+        for start, end in connections:
+            connections_graph[start].append(-end)
+            connections_graph[end].append(start)
+
+        result = 0
+        bfs_nodes = deque([0])
+        visited_cities[0] = True
+
+        while bfs_nodes:
+            current_node = bfs_nodes.popleft()
+
+            for end_node in connections_graph[current_node]:
+                if visited_cities[abs(end_node)]:
+                    continue
+                if end_node < 0:
+                    result += 1
+
+                visited_cities[abs(end_node)] = True
+                bfs_nodes.append(abs(end_node))
+
+        return result
 
 
 result = Solution()

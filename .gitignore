@@ -44,3 +44,10 @@ data/
 *.bak
 *.swp
 *.swo
+
+# Drawings
+*.drawio
+*.drawio.svg
+*.drawio.png 
+*.dio
+*.excalidraw*

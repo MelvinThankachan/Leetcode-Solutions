@@ -1,4 +1,4 @@
 Resources
+    - https://authorslog.com/ (Good)
     - https://walkccc.me/LeetCode/
     - https://neetcode.io/
-    - https://authorslog.com/ (Good)
